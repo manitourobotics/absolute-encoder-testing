@@ -25,22 +25,32 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  */
 public class RobotTemplate extends SimpleRobot {
 
-    DigitalInput magdec = new DigitalInput(4);
-    DigitalInput maginc = new DigitalInput(3);
-    AnalogChannel absAngle = new AnalogChannel(1);
-    /**
-     * This function is called once each time the robot enters operator control.
-     */
+    // these inputs are to test weather the magnetic encoder is in the correct field.
+    // These don't need to be used.
+    static final int MAGNETIC_FIELD_DECREASING_TEST = 4;
+    static final int MAGNETIC_FIELD_INCREASING_TEST = 3;
+    DigitalInput magdec = new DigitalInput(MAGNETIC_FIELD_DECREASING_TEST);
+    DigitalInput maginc = new DigitalInput(MAGNETIC_FIELD_INCREASING_TEST);
+
+    // Find the output foltage from the low-pass filter from the pwm out
+    static final int ABSOLUTE_ENCODER_CHANNEL = 1;
+    AnalogChannel absAngle = new AnalogChannel(ABSOLUTE_ENCODER_CHANNEL);
+    
+    static final double HEURISTIC_VOLTAGE = 4.9;
+
     public void operatorControl() {
         while(true) {
-            // output voltage is ~4.1v. Conversion
-            double angle = absAngle.getVoltage() * 360/4.9; 
+            // output voltage is ~4.9v. Conversion to angle
+            // If the max voltage doesn't give 360 degrees, then the heuristic voltage is wrong
+            double angle = absAngle.getVoltage() * 360/HEURISTIC_VOLTAGE; 
 
             SmartDashboard.putBoolean("maginc", maginc.get());
             SmartDashboard.putBoolean("magdec", magdec.get());
             SmartDashboard.putNumber("voltage", absAngle.getVoltage());
             SmartDashboard.putNumber("angle", angle);
             System.out.println("voltage:" + absAngle.getVoltage());
+            System.out.println("angle:" + angle);
+
         }
 
     }
