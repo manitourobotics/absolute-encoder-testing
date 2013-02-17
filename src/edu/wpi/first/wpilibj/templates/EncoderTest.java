@@ -23,7 +23,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  * 
  * 
  */
-public class RobotTemplate extends SimpleRobot {
+public class EncoderTest extends SimpleRobot {
 
     // these inputs are to test weather the magnetic encoder is in the correct field.
     // These don't need to be used.
