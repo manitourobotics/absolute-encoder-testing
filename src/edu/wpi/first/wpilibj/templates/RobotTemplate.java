@@ -1,10 +1,3 @@
-/*----------------------------------------------------------------------------*/
-/* Copyright (c) FIRST 2008. All Rights Reserved.                             */
-/* Open Source Software - may be modified and shared by FRC teams. The code   */
-/* must be accompanied by the FIRST BSD license file in the root directory of */
-/* the project.                                                               */
-/*----------------------------------------------------------------------------*/
-
 package edu.wpi.first.wpilibj.templates;
 
 
@@ -21,12 +14,6 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  * directory.
  */
 public class RobotTemplate extends SimpleRobot {
-    /**
-     * This function is called once each time the robot enters autonomous mode.
-     */
-    public void autonomous() {
-        
-    }
 
     DigitalInput magdec = new DigitalInput(4);
     DigitalInput maginc = new DigitalInput(3);
@@ -46,12 +33,5 @@ public class RobotTemplate extends SimpleRobot {
             System.out.println("voltage:" + absAngle.getVoltage());
         }
 
-    }
-    
-    /**
-     * This function is called once each time the robot enters test mode.
-     */
-    public void test() {
-    
     }
 }
