@@ -8,11 +8,9 @@
  
  
 ### Wiring
- One wire connected to a ground(GND pin) on the magnetic encoder to the analog breakout gnd(-)
-
- One wire going from the analog breakout power(pwr) to the 5v pin on the encoder
-
- One wire going from the PWM pin on the encoder to a low-pass filter to change the PWM output to analog and then from the low pass filter to the desired channel on the analog breakout on the cRIO
+ * One wire connected to a ground(GND pin) on the magnetic encoder to the analog breakout gnd(-) 
+ * One wire going from the analog breakout power(pwr) to the 5v pin on the encoder
+ * One wire going from the PWM pin on the encoder to a low-pass filter to change the PWM output to analog and then from the low pass filter to the desired channel on the analog breakout on the cRIO
  
 ####Optional Wiring
 
