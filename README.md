@@ -1,9 +1,9 @@
-# Using the AS5145B as an Absolute Encoder via PWM filtered thorough a low-pass filter taken as Analog input
+# Using the AS5145B magnetic encoder to get the absolute position of a shaft via PWM filtered thorough a low-pass filter taken as Analog input with the WPILIB
 
 (may be useful for other magnetic encoders)
 
- This class is used to test out the AS5145B encodder for absolute input
- via the pwm out put through a low-pass filter
+The determined angle is persistent through powering on and off the encoder 
+
  See the [datasheet](http://www.ams.com/eng/content/download/50206/533867/34237)([source](http://www.ams.com/eng/Products/Magnetic-Position-Sensors/Magnetic-Rotary-Position-Sensors/AS5145B)) for additional guidance(creating a low-pass filter):
  
  
