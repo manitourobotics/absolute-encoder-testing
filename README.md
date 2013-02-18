@@ -4,7 +4,7 @@
 
  This class is used to test out the AS5145B encodder for absolute input
  via the pwm out put through a low-pass filter
- See the [datasheet](http://www.ams.com/eng/content/download/50206/533867/34237)([source](http://www.ams.com/eng/Products/Magnetic-Position-Sensors/Magnetic-Rotary-Position-Sensors/AS5145B)) for instructions for wiring:
+ See the [datasheet](http://www.ams.com/eng/content/download/50206/533867/34237)([source](http://www.ams.com/eng/Products/Magnetic-Position-Sensors/Magnetic-Rotary-Position-Sensors/AS5145B)) for additional guidance(creating a low-pass filter):
  
  
 ### Wiring
