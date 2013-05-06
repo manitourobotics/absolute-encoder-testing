@@ -33,7 +33,7 @@ public class AbsoluteEncoderTest extends SimpleRobot {
     DigitalInput maginc = new DigitalInput(MAGNETIC_FIELD_INCREASING_TEST);
 
     // Find the output foltage from the low-pass filter from the pwm out
-    static final int ABSOLUTE_ENCODER_CHANNEL = 1;
+    static final int ABSOLUTE_ENCODER_CHANNEL = 2;
     AnalogChannel absAngle = new AnalogChannel(ABSOLUTE_ENCODER_CHANNEL);
     
     static final double HEURISTIC_VOLTAGE = 4.9;
