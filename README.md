@@ -2,7 +2,7 @@
 
 (may be useful for other magnetic encoders)
 
-The determined angle is persistent through powering on and off the encoder. The pwm output outputs a square wave porportional to the degree of angle of the shaft. The low pass filter is so one can use the pwm output as analog output, where the voltage is porportional to the angle of the shaft. Note, this will introduce some noise; I've been getting around plus or minus 3 degrees of inaccuracy due to noise.
+The determined angle is persistent through powering on and off the encoder. The pwm output outputs a square wave porportional to the degree of angle of the shaft. The low pass filter is so one can use the pwm output as analog output, where the voltage is porportional to the angle of the shaft. Note, this will introduce some noise; I've been getting around ± 3 degrees of inaccuracy due to noise.
 
  See the [datasheet](http://www.ams.com/eng/content/download/50206/533867/34237)([source](http://www.ams.com/eng/Products/Magnetic-Position-Sensors/Magnetic-Rotary-Position-Sensors/AS5145B)) for additional guidance(creating a low-pass filter):
 
